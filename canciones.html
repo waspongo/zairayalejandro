@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://lenda.net/wp-content/uploads/2020/04/musica-perro-lenda-min.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: rgba(230, 57, 70, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffe8e8;
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            color: #ff4d6d;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .songs-container {
+            background: rgba(34, 34, 51, 0.9);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .songs-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .songs-container ul li {
+            margin: 15px 0;
+            font-size: 1.3rem;
+        }
+
+        .songs-container ul li a {
+            color: #ff6f91;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .songs-container ul li a:hover {
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: rgba(34, 34, 51, 0.9);
+            color: #ffffff;
+            font-size: 1rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer::before {
+            content: "";
+            display: block;
+            width: 60%;
+            height: 2px;
+            background: #ff6f91;
+            margin: 15px auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .songs-container ul li {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="para_ti.html">Para Ti</a>
+        <a href="canciones.html">Canciones</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Canciones Que Me Recuerdan A Ti</h1>
+        <div class="songs-container">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=9BMwcO6_hyA" target="_blank">Always - Bon Jovi</a></li>
+                <li><a href="https://www.youtube.com/watch?v=some-link-for-lento" target="_blank">Lento - Santy-P</a></li>          
+                <li><a href="https://www.youtube.com/watch?v=O1-4u9W-bns" target="_blank">I Won't Give Up - Jason Mraz</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Con todo mi amor, dedicado para ti.
+    </footer>
+</body>
+</html>
