@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/IMG_4296.PNG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(230, 57, 70, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe1e9;
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            color: #ff6f91;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-container img, 
+        .gallery-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-container img:hover, 
+        .gallery-container video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: rgba(230, 57, 70, 0.9);
+            color: #ffffff;
+            font-size: 1rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer::before {
+            content: "";
+            display: block;
+            width: 60%;
+            height: 2px;
+            background: #ffe1e9;
+            margin: 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="para_ti.html">Para Ti</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Galería de Momentos Especiales</h1>
+        <div class="gallery-container">
+            <!-- Fotos -->
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/acuario1.JPG" alt="Foto 1">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/acuario2.JPG" alt="Foto 2">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/acuario3.JPG" alt="Foto 3">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano1.JPG" alt="Foto 4">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano2.JPG" alt="Foto 5">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano3.JPG" alt="Foto 6">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano4.JPG" alt="Foto 7">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano5.PNG" alt="Foto 8">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano6.PNG" alt="Foto 9">
+            <img src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/verano7.PNG" alt="Foto 10">
+
+            <!-- Video -->
+            <video controls>
+                <source src="C:/Users/USUARIO/Desktop/PAGINA WEB ZAIRA/video1.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        Hecho con amor para momentos inolvidables.
+    </footer>
+</body>
+</html>

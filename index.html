@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Año, Mi Amor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #ffffff;
+            background-image: url('https://i.pinimg.com/originals/c4/57/bc/c457bc2f96831239fb22ac9ba82c3514.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: rgba(230, 57, 70, 0.9);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffe8e8;
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            color: #ff4d6d;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            color: #ffb3c1;
+        }
+
+        .heart-symbol {
+            font-size: 5.5rem;
+            margin: 20px 0;
+            color: #ff6f91;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .date-symbol {
+            font-size: 1.8rem;
+            margin: 15px 0;
+            background: rgba(255, 77, 109, 0.8);
+            color: #ffffff;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .counter {
+            font-size: 1.7rem;
+            margin: 20px 0;
+            color: #ffffff;
+            background: rgba(255, 77, 109, 0.8);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .message {
+            font-size: 1.5rem;
+            margin-top: 25px;
+            background: rgba(230, 57, 70, 0.8);
+            color: #ffffff;
+            display: inline-block;
+            padding: 20px 35px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        .footer::before {
+            content: "";
+            display: block;
+            width: 70%;
+            height: 3px;
+            background: #ff4d6d;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            .counter {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="para_ti.html">Para Ti</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Feliz Año Zaira, Te Quiero</h1>
+        <h2>Eres lo mejor de mi vida</h2>
+        <div class="heart-symbol">💝</div>
+        <div class="date-symbol">29-08-24 &infin;</div>
+        <div class="counter" id="counter"></div>
+        <p class="message">Este año y todos los que vienen, quiero pasarlos contigo. Eres mi todo.</p>
+    </div>
+
+    <div class="footer">Con amor, siempre tuyo.</div>
+
+    <script>
+        const startDate = new Date('2024-08-29T00:00:00');
+
+        function updateCounter() {
+            const now = new Date();
+            const elapsed = now - startDate;
+
+            const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+
+            document.getElementById('counter').textContent = `Desde hace: ${days} días, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+        }
+
+        setInterval(updateCounter, 1000);
+    </script>
+</body>
+</html>
+
+
+
